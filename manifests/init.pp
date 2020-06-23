@@ -51,6 +51,8 @@ class wpython (
 
 ) inherits wpython::params {
 
-  include wpython::install
+  if ($python_version != $version or $uninstall) {
+    include wpython::install
+  }
   
 }
