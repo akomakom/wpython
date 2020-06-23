@@ -34,7 +34,7 @@ class wpython::install inherits wpython {
 
     }
     default: {
-      $packagefile = "https://www.python.org/ftp/python/${version}/python-${version}.msi"
+      $packagefile = $downloadurl
     }
   }
 
